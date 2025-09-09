@@ -1,7 +1,32 @@
 
+body {
+
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(-45deg, #0d6efd, #6610f2, #6f42c1, #20c997);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    min-height: 100vh;
+  }
 /* Altura responsiva del carrusel */
 .carousel-h { height: 380px; }
 @media (max-width: 768px){ .carousel-h { height: 260px; } }
 
 /* Si tu imagen no llena, que recorte centrado */
 .object-fit-cover { object-fit: cover; }
+
+/* Navbar transparente por defecto */
+#mainNav {
+    transition: background-color 0.4s ease-in-out;
+  }
+  
+  /* Cuando haces scroll, fondo oscuro */
+  .navbar-scrolled {
+    background-color: rgba(0, 0, 0, 0.85) !important;
+  }
+  
+  
+  @keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+  }

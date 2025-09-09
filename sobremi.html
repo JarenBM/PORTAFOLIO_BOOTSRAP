@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sobre mí · Portafolio</title>
@@ -11,49 +12,48 @@
 <body>
 
   <!-- NAVBAR (sobre mí activo) -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">Mi Portafolio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div id="nav" class="collapse navbar-collapse">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link active" href="sobremi.html">Sobre mí</a></li>
-          <li class="nav-item"><a class="nav-link" href="experienciaprofesional.html">Experiencia Profesional</a></li>
+  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Mi Portafolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="nav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link nav-btn active" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link nav-btn" href="sobremi.html">Sobre mí</a></li>
+            <li class="nav-item"><a class="nav-link" href="experienciaprofesional.html">Experiencia Profesional</a></li>
           <li class="nav-item"><a class="nav-link" href="experienciadocente.html">Experiencia Docente Universitaria</a></li>
           <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
-          <li class="nav-item"><a class="nav-link" href="habilidades.html">Habilidades</a></li>
-          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-        </ul>
+            <li class="nav-item"><a class="btn btn-primary ms-3 px-3 rounded-pill" href="contacto.html">Contáctame</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
   <!-- CONTENIDO -->
   <main class="container py-5">
   <div class="row g-4 align-items-center">
     <div class="col-md-4 text-center">
-      <img src="img/perfil.jpg" class="rounded-circle shadow" alt="Foto" width="220" height="220">
+      <img src="img/Foto_perfil.jpeg" class="rounded-circle shadow" alt="Foto" width="220" height="220">
     </div>
     <div class="col-md-8">
       <h1>Sobre mí</h1>
       <p class="lead mb-2">“Del código a la estrategia, de la teoría a la acción.”</p>
       <p>
-        Profesional con 18 años en el sector financiero; experiencia en tecnología, data science y gestión de proyectos IT.
-        Lideré la 1ra etapa de la app móvil para asesores de negocios, la creación del dpto. de BIA y la implementación de
-        dashboards financieros en Caja Huancayo. MBA y docente universitario con enfoque práctico en apps, web y analítica. :contentReference[oaicite:1]{index=1}
+        Llevo 19 años a mi espalda, estudiante de la carrera de ingenieria de sistemas e informatica en la universidad Continental, actualmente
+        cursando el tercer ciclo de esta hermosa carrera que me gusta. :contentReference[oaicite:1]{index=1}
       </p>
 
       <div class="row g-3 mt-2">
         <div class="col-sm-6">
           <div class="list-group small">
-            <div class="list-group-item"><strong>Nombre:</strong> Guillermo Eduardo Peña Garcia</div>
-            <div class="list-group-item"><strong>Email:</strong> <a href="mailto:guilledu.pg@strategymge.com">guilledu.pg@strategymge.com</a></div>
+            <div class="list-group-item"><strong>Nombre:</strong> Jaren Buendia Mauricio</div>
+            <div class="list-group-item"><strong>Email:</strong> <a href="mailto:60006466@continental.edu.pe">60006466@continental.edu.pe</a></div>
             <div class="list-group-item"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/guillermopenagarcia/" target="_blank">/in/guillermopenagarcia</a></div>
             <div class="list-group-item"><strong>Portafolio:</strong> <a href="https://guilledupenag.com/" target="_blank">guilledupenag.com</a></div>
-            <div class="list-group-item"><strong>Celular:</strong> (051) 964733868</div>
+            <div class="list-group-item"><strong>Celular:</strong> (051) 961 870 988</div>
           </div>
         </div>
         <div class="col-sm-6">
@@ -90,11 +90,13 @@
 
 
   <!-- FOOTER -->
-  <footer class="text-center text-white py-3 bg-dark">
-    <div class="container">
-      <p class="mb-0">&copy; 2025 Tu Nombre. Todos los derechos reservados.</p>
-    </div>
-  </footer>
+<footer class="bg-dark text-light py-4 mt-5">
+  <div class="container text-center">
+    <p class="mb-1">&copy; 2025 JAREN Mi Portafolio</p>
+    <a href="https://www.linkedin.com/" class="text-light me-3"><i class="bi bi-linkedin"></i></a>
+    <a href="https://github.com/" class="text-light"><i class="bi bi-github"></i></a>
+  </div>
+</footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>

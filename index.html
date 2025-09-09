@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Inicio · Portafolio</title>
@@ -13,32 +15,30 @@
 <body>
 
   <!-- NAVBAR (inicio activo) -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">Mi Portafolio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div id="nav" class="collapse navbar-collapse">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="sobremi.html">Sobre mí</a></li>
-          <li class="nav-item"><a class="nav-link" href="experienciaprofesional.html">Experiencia Profesional</a></li>
+  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Mi Portafolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="nav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link nav-btn active" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link nav-btn" href="sobremi.html">Sobre mí</a></li>
+            <li class="nav-item"><a class="nav-link" href="experienciaprofesional.html">Experiencia Profesional</a></li>
           <li class="nav-item"><a class="nav-link" href="experienciadocente.html">Experiencia Docente Universitaria</a></li>
           <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
-          <li class="nav-item"><a class="nav-link" href="habilidades.html">Habilidades</a></li>
-          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-          
-
-        </ul>
+            <li class="nav-item"><a class="btn btn-primary ms-3 px-3 rounded-pill" href="contacto.html">Contáctame</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
   <!-- HERO de bienvenida -->
   <header class="text-white py-5" style="background: linear-gradient(135deg, #0d6efd, #6610f2);">
     <div class="container text-center">
-      <img src="img/perfil.jpg" alt="Foto de perfil" class="rounded-circle mb-3 shadow" width="160" height="160">
+      <img src="img/Foto_perfil.jpeg" alt="Foto de perfil" class="rounded-circle mb-3 shadow" width="160" height="160">
       <h1 class="display-5 fw-bold">¡Hola! Soy JAREN</h1>
       <p class="lead">Estudiante de desarrollo web apasionado por crear experiencias modernas con HTML, CSS, JavaScript y Bootstrap.</p>
       <a class="btn btn-primary btn-lg me-2" href="proyectos.html">
@@ -53,7 +53,8 @@
 <!-- CARRUSEL (Bootstrap) -->
 <section class="py-4">
   <div class="container">
-    <div id="homeCarousel" class="carousel slide shadow-sm rounded overflow-hidden" data-bs-ride="carousel">
+    <div id="homeCarousel" class="carousel slide shadow-sm rounded overflow-hidden" data-bs-ride="carousel" data-bs-interval="3000">
+
       <!-- Indicadores -->
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -100,6 +101,7 @@
 </section>
 
 
+
   <!-- Sección rápida con links -->
   <main class="container py-5">
     <div class="row g-4 text-center">
@@ -142,12 +144,14 @@
     </div>
   </main>
 
-  <!-- FOOTER -->
-  <footer class="text-center text-white py-3 bg-dark">
-    <div class="container">
-      <p class="mb-0">&copy; 2025 JAREN. Todos los derechos reservados.</p>
-    </div>
-  </footer>
+ <!-- FOOTER -->
+<footer class="bg-dark text-light py-4 mt-5">
+  <div class="container text-center">
+    <p class="mb-1">&copy; 2025 JAREN Mi Portafolio</p>
+    <a href="https://www.linkedin.com/" class="text-light me-3"><i class="bi bi-linkedin"></i></a>
+    <a href="https://github.com/" class="text-light"><i class="bi bi-github"></i></a>
+  </div>
+</footer>
 
   <!-- Bootstrap JS + tu JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
